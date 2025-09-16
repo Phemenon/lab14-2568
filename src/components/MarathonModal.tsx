@@ -9,7 +9,6 @@ import {
   Button,
   PasswordInput,
   Text,
-  Divider,
   Group,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
@@ -18,7 +17,6 @@ import { zod4Resolver } from "mantine-form-zod-resolver";
 import { marathonSchema } from "../zod/MarathonSchema";
 import { useEffect, useState } from "react";
 import { type MarathonModalProps } from "../libs/Marathon";
-import { set } from "zod";
 export default function MarathonModal({ opened, onClose }: MarathonModalProps) {
   const [agree, setAgree] = useState(false);
   const {
